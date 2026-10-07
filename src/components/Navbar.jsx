@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom";
 
 function Navbar() {
-
     return (
-
         <nav className="navbar">
 
-            <Link
-                to="/"
-                className="logo"
-            >
-                MovieHub
+            <Link to="/" className="logo">
+
+                <span className="logo-icon">
+                    🎬
+                </span>
+
+                <span>
+                    MovieHub
+                </span>
+
             </Link>
 
             <div className="nav-links">

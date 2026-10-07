@@ -11,14 +11,13 @@ import Movies from "./pages/Movies";
 import MovieDetails from "./pages/MovieDetails";
 import Theatres from "./pages/Theatres";
 import Seats from "./pages/Seats";
-import Booking from "./pages/Booking";
+import Snacks from "./pages/Snacks";
+import Receipt from "./pages/Receipt";
 
 import "./App.css";
 
 function App() {
-
   return (
-
     <BrowserRouter>
 
       <Navbar />
@@ -51,8 +50,13 @@ function App() {
         />
 
         <Route
-          path="/booking"
-          element={<Booking />}
+          path="/snacks"
+          element={<Snacks />}
+        />
+
+        <Route
+          path="/receipt"
+          element={<Receipt />}
         />
 
       </Routes>
